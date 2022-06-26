@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
+  use_doorkeeper
   devise_for :users
   resources :books
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-
-  # Defines the root path route ("/")
-  # root "articles#index"
   root 'pages#hello'
+  use_doorkeeper do
+    skip_controllers :authorizations, :applications, :authorized_applications
+  end
 end

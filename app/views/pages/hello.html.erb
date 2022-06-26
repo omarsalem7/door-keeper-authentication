@@ -9,6 +9,7 @@
   <%= link_to "Sign up", new_user_registration_path %>
 <% end %>
 <p> Test the API </p>
+<p> <%= @application.as_json  %> </p>
 <ul>
   <li><%= link_to "Web books", books_path  %> </li>
   <li>API Books</li>

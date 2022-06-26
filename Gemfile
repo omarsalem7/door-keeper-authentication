@@ -80,4 +80,6 @@ group :test do
   gem 'webdrivers'
 end
 
-gem "devise", "~> 4.8"
+gem 'devise', '~> 4.8'
+
+gem 'doorkeeper', '~> 5.5'
