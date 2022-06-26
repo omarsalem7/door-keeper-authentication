@@ -1,2 +1,16 @@
-<h1>Pages#hello</h1>
+<% if user_signed_in? %>
+  <h1><%= "hello #{current_user.email}"  %></h1>
+<% end %>
 <p>Find me in app/views/pages/hello.html.erb  hello sir omar semese marwan sad</p>
+<% if user_signed_in? %>
+  <%= button_to "Sign out", destroy_user_session_path, method: :delete  %>
+<% else %>
+  <%= link_to "Sign in", new_user_session_path %>
+  <%= link_to "Sign up", new_user_registration_path %>
+<% end %>
+<p> Test the API </p>
+<ul>
+  <li><%= link_to "Web books", books_path  %> </li>
+  <li>API Books</li>
+  <li>Andriod Books</li>
+</ul>
