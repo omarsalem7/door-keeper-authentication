@@ -1,4 +1,4 @@
-class Api::V1::BooksController < ApplicationController
+class Api::V1::BooksController < ApiController
   before_action :set_book, only: %i[show edit update destroy]
 
   # GET /books or /books.json
