@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/ROR-Template-blueviolet)
 
-# Project Title
+# Authentication Doorkeeper 
 
 > Description of the project
 
