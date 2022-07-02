@@ -2,7 +2,7 @@
 
 # Authentication Doorkeeper 
 
-> Description of the project
+> This is an backend authentication with doorkeeper which serve multiple systems(React-Andriod-IOs) 
 
 
 ## Built With
